@@ -8,7 +8,7 @@ const commonConfig = {
     alias: {
       vue: "vue/dist/vue.js",
       "@pages": path.join(__dirname, "../src/pages"),
-      "@component": path.join(__dirname, "../src/component"),
+      "@components": path.join(__dirname, "../src/components"),
       "@router": path.join(__dirname, "../src/router"),
       "@assets": path.join(__dirname, "../src/assets")
     }

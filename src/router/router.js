@@ -9,8 +9,8 @@ const router = new Router({
             component: () => import(/* webpackChunkName: 'subPageA'*/'@pages/home.vue')
         },
         {
-            path: "/login",
-            component: () => import(/* webpackChunkName: 'subPageA'*/'@pages/login.vue')
+            path: "/email",
+            component: () => import(/* webpackChunkName: 'subPageA'*/'@pages/email.vue')
         }
     ]
 });

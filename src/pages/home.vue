@@ -1,17 +1,16 @@
 <template>
   <div id="home">
-    <h1>这是首页</h1>
+    <HelloWorld />
   </div>
 </template>
 
 <script>
+import HelloWorld from '@components/HelloWorld.vue'
+
 export default {
   name: "home",
+  components: {
+    HelloWorld
+  }
 }
 </script>
-
-<style scoped>
-h1 {
-  color: blue;
-}
-</style>
