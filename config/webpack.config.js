@@ -4,6 +4,7 @@ const path = require("path");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");// 清除以前的打包文件
 const OptimizeCssAssetsPlugin = require("optimize-css-assets-webpack-plugin");//压缩css插件
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');// 分离css代码
+const UglifyJSPlugin = require('uglifyjs-webpack-plugin');// 压缩代码
 
 const config = {
   mode: "production",
@@ -79,6 +80,7 @@ const config = {
       chunkFilename: 'css/[chunkhash].chunk.css',
       ignoreOrder: false
     }),
+    new UglifyJSPlugin(),
     new OptimizeCssAssetsPlugin(),//执行压缩抽离出来的css
     new CleanWebpackPlugin(),//清除多次生成的缓存文件
   ],

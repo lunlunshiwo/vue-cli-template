@@ -4,7 +4,7 @@
       For a guide and recipes on how to configure / customize this project,<br>
       give me a message in
       <a
-        href="https://github.com/lunlunshiwo/vue-cli-template/issues"
+        href="https://github.com/lunlunshiwo/vue-min-cli/issues"
         target="_blank"
         rel="noopener"
       >in my issues</a>.
